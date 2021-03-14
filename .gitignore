@@ -2,6 +2,7 @@
 
 ####################### CUSTOM #########################################
 notebooks/*.html
+notebooks/*.pdf
 data
 presentations
 sujets
