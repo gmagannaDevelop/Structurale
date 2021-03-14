@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "structurale"
+version = "0.1.0"
+description = "UE bioinformatique structurale."
+authors = ["Gustavo Magaña López <gmaganna.biomed@gmail.com>"]
+license = "BSD"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+biopython = "^1.78"
+matplotlib = "^3.3.4"
+pandas = "^1.2.3"
+freesasa = "^2.1.0"
+nglview = "^2.7.7"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.21.0"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
