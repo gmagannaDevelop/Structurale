@@ -3,7 +3,9 @@
 ####################### CUSTOM #########################################
 notebooks/*.html
 notebooks/*.pdf
-data
+# Commented data. I'll include the pdb files as this 
+# enhances reproducibility and they are not so heavy
+#data
 presentations
 sujets
 
