@@ -1,0 +1,33 @@
+---
+title: "Untitled"
+author: "BOUTARD Anthony, MAGAÑA LOPEZ Gustavo"
+date: "03/03/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+here::i_am("notebooks/TP1.Rmd")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libs}
+library(here)
+library(tidyverse)
+```
+
+
+# Tâche 3.1
+1. De quelles protéines s'agit-il ?
+
+2. Combien de chaînes polypeptidiques contient le fichier PDB ? Combien de résidus par chaîne ?
+
+3. S'agit-il d'un homo ou hétéro-mère ?
+
+# Tâche 3.2
+Pour chaque protéine dans le complexe, répondez aux questions suivantes :
+
+1. La structure PDB représente-t-elle la protéine entière ou une portion ?
+
+2. La protéine est composée de plusieurs domaines ?
+
+3. Quelle est la fonction (putative) de la protéine ? et de ses domaines ?
