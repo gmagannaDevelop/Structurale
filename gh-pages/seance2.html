@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Séance 1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Séance 2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14256,33 +14256,13 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Activit&#233;-3-:-Analyse-d&#8217;un-complexe-avec-PyMOL">Activit&#233; 3 : Analyse d&#8217;un complexe avec PyMOL<a class="anchor-link" href="#Activit&#233;-3-:-Analyse-d&#8217;un-complexe-avec-PyMOL">&#182;</a></h2>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>On ajoute un élément au <code>python search path</code> afin de pouvoir utiliser nos 
-fonctions et modules :</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-
-<span class="n">TXT_PROJ_ROOT</span> <span class="o">=</span> <span class="s2">&quot;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/&quot;</span>
-
-<span class="k">if</span> <span class="n">TXT_PROJ_ROOT</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
-    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TXT_PROJ_ROOT</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Added project root to Python search path&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Project root already present in Python search path&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14290,37 +14270,38 @@ fonctions et modules :</p>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Added project root to Python search path
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Classes pour manipuler plus facilement les chemins d'accès en Python :</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">TXT_PROJ_ROOT</span> <span class="o">=</span> <span class="s2">&quot;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TXT_PROJ_ROOT</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">piestruct.utils.customobjs</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ObjDict</span> <span class="k">as</span> <span class="n">odict</span><span class="p">,</span> <span class="n">Path</span> <span class="k">as</span> <span class="n">path</span><span class="p">)</span>
@@ -14332,16 +14313,10 @@ fonctions et modules :</p>
 </div>
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Modules nécessaires pour faire l'analyse structurale :</p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">Bio.PDB</span> <span class="k">as</span> <span class="nn">pdb</span>
@@ -14370,12 +14345,12 @@ fonctions et modules :</p>
 
 
 
-<div id="0a930139-1927-4224-be7f-4c525d2e60d9" class="jupyter-widgets jp-OutputArea-output ">
+<div id="0d44dfb1-1c86-4877-be6b-6d08696a1fea" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('0a930139-1927-4224-be7f-4c525d2e60d9');
+var element = document.getElementById('0d44dfb1-1c86-4877-be6b-6d08696a1fea');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "2e86494962c74bd583112d74c1535e24", "version_major": 2, "version_minor": 0}
+{"model_id": "af1446e326c2466da6ecd8f53b9b7dea", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14388,7 +14363,7 @@ var element = document.getElementById('0a930139-1927-4224-be7f-4c525d2e60d9');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">proj_root</span> <span class="o">=</span> <span class="n">path</span><span class="p">(</span><span class="n">TXT_PROJ_ROOT</span><span class="p">)</span>
@@ -14399,124 +14374,23 @@ var element = document.getElementById('0a930139-1927-4224-be7f-4c525d2e60d9');
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pdb_files</span> <span class="o">=</span> <span class="n">proj_root</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">dglob</span><span class="p">(</span><span class="s2">&quot;*.pdb&quot;</span><span class="p">)</span>
-<span class="n">pdb_files</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>{&#39;1he8.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/1he8.pdb&#39;),
- &#39;1HE8_AB_c.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/1HE8_AB_c.pdb&#39;),
- &#39;1e8y.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/1e8y.pdb&#39;),
- &#39;121p.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/121p.pdb&#39;)}</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Cr&#233;er-les-structures">Cr&#233;er les structures<a class="anchor-link" href="#Cr&#233;er-les-structures">&#182;</a></h2>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">prot_s_sasa</span> <span class="o">:=</span> <span class="n">freesasa</span><span class="o">.</span><span class="n">Structure</span><span class="p">(</span> <span class="n">pdb_files</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c.pdb&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">abs</span> <span class="p">))</span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;freesasa.Structure at 0x7f91cf8b8ae0&gt;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">prot_c_sasa</span> <span class="o">:=</span> <span class="n">freesasa</span><span class="o">.</span><span class="n">calc</span><span class="p">(</span><span class="n">prot_s_sasa</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">parse_pdb</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> 
+    <span class="n">pdb</span>
+    <span class="o">.</span><span class="n">PDBParser</span><span class="p">(</span><span class="n">QUIET</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">get_structure</span><span class="p">(</span><span class="nb">id</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.pdb&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span> <span class="n">file</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">abs</span> <span class="p">)</span>
+<span class="p">)</span> <span class="c1"># x doit être un fichier de type piestruct.utils.customobjs.Path</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;freesasa.Result at 0x7f91cf941fd0&gt;</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14525,13 +14399,8 @@ var element = document.getElementById('0a930139-1927-4224-be7f-4c525d2e60d9');
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Attention : J&#39;ai mis l&#39;argument QUIET=True pour cacher les alertes issues de l&#39;importation</span>
-<span class="c1"># du fichier. D&#39;après la doc officielle de BioPython, ces &quot;Warnings&quot; sont des indicateurs</span>
-<span class="c1"># de problèmes dans la structure du fichier PDB. À RETENIR.</span>
-<span class="p">(</span><span class="n">prot_biopy</span> <span class="o">:=</span> <span class="n">pdb</span>
- <span class="o">.</span><span class="n">PDBParser</span><span class="p">(</span><span class="n">QUIET</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
- <span class="o">.</span><span class="n">get_structure</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;1HE8&quot;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">pdb_files</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c.pdb&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">abs</span><span class="p">)</span>
-<span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pdb_files</span> <span class="o">=</span> <span class="n">proj_root</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">dglob</span><span class="p">(</span><span class="s2">&quot;*.pdb&quot;</span><span class="p">)</span>
+<span class="n">pdb_files</span>
 </pre></div>
 
      </div>
@@ -14553,7 +14422,10 @@ var element = document.getElementById('0a930139-1927-4224-be7f-4c525d2e60d9');
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;Structure id=1HE8&gt;</pre>
+<pre>{&#39;1he8.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/1he8.pdb&#39;),
+ &#39;1HE8_AB_c.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/1HE8_AB_c.pdb&#39;),
+ &#39;1e8y.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/1e8y.pdb&#39;),
+ &#39;121p.pdb&#39;: PosixPath(&#39;/home/gml/Documents/Master/M1_BIBS/S2/Structurale/data/121p.pdb&#39;)}</pre>
 </div>
 
 </div>
@@ -14562,31 +14434,13 @@ var element = document.getElementById('0a930139-1927-4224-be7f-4c525d2e60d9');
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Notes sur les structures PDB de BioPython</strong> :</p>
-<p>La fonction <code>Bio.PDB.PDBParser().get_structure</code> renvoie un objet de type <code>Structure(Bio.PDB.Entity.Entity)</code>.
-Celui-ci est "subscriptable" comme une liste. Chacun des éléments, sera alors un modèle <code>Model(Bio.PDB.Entity.Entity)</code>.</p>
-<p>Voir <code>help(prot_biopy[0])</code></p>
-<p>...</p>
-<p>The object representing a model in a structure.</p>
-<p>In a structure derived from an X-ray crystallography experiment,
-   only a single model will be present (with some exceptions). NMR
-   structures normally contain many different models.</p>
-<p>Method resolution order:
-       Model
-       Bio.PDB.Entity.Entity
-       builtins.object</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prot_m_biopy</span> <span class="o">=</span> <span class="n">prot_biopy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pdb_files</span><span class="p">[</span><span class="s2">&quot;121p.pdb&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
 </pre></div>
 
      </div>
@@ -14594,42 +14448,39 @@ Celui-ci est "subscriptable" comme une liste. Chacun des éléments, sera alors 
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;121p.pdb&#39;</pre>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Note on views</strong> : These are not rendered on the html version of the notebook. To visualise them download the notebook and import a pdb file.</p>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="T&#226;che-3.1">T&#226;che 3.1<a class="anchor-link" href="#T&#226;che-3.1">&#182;</a></h3>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol>
-<li>De quelles protéines s’agit-il ?</li>
-</ol>
-<p>Il s'agit du complexe Ras G12V - PI 3-kinase gamma. C'est un hétéro-2-mère A1B1 asymétrique, dont la fonction est importante pour la survie de cellules transformées (<em>Ras activation of phosphoinositide 3-kinase (PI3K) is important for survival of transformed cells</em>).</p>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol>
-<li>Combien de chaînes polypeptidiques contient le fichier PDB ? Combien de résidus par chaîne ?</li>
-</ol>
 
 </div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># via BioPython</span>
-<span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">prot_biopy</span><span class="o">.</span><span class="n">get_chains</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">biop_struct</span> <span class="o">:=</span> <span class="n">odict</span><span class="p">({</span> 
+        <span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.pdb&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">):</span>  <span class="n">parse_pdb</span><span class="p">(</span><span class="n">location</span><span class="p">)</span> 
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">location</span> <span class="ow">in</span> <span class="n">pdb_files</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> 
+<span class="p">}))</span>
 </pre></div>
 
      </div>
@@ -14651,7 +14502,10 @@ Celui-ci est "subscriptable" comme une liste. Chacun des éléments, sera alors 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
+<pre>{&#39;1he8&#39;: &lt;Structure id=1he8&gt;,
+ &#39;1HE8_AB_c&#39;: &lt;Structure id=1HE8_AB_c&gt;,
+ &#39;1e8y&#39;: &lt;Structure id=1e8y&gt;,
+ &#39;121p&#39;: &lt;Structure id=121p&gt;}</pre>
 </div>
 
 </div>
@@ -14666,9 +14520,8 @@ Celui-ci est "subscriptable" comme une liste. Chacun des éléments, sera alors 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># via BioPython</span>
-<span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">prot_m_biopy</span><span class="o">.</span><span class="n">get_chains</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Chain </span><span class="si">{</span><span class="n">chain</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">get_residues</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">struct</span> <span class="ow">in</span> <span class="n">biop_struct</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">struct</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14688,8 +14541,10 @@ Celui-ci est "subscriptable" comme une liste. Chacun des éléments, sera alors 
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Chain A : 749
-Chain B : 166
+<pre>1
+1
+1
+1
 </pre>
 </div>
 </div>
@@ -14698,13 +14553,16 @@ Chain B : 166
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">prot_resid_areas</span> <span class="o">=</span> <span class="n">prot_c_sasa</span><span class="o">.</span><span class="n">residueAreas</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">biop_models</span> <span class="o">:=</span> <span class="n">odict</span><span class="p">({</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">struct</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">struct</span> <span class="ow">in</span> <span class="n">biop_struct</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">}))</span>
 </pre></div>
 
      </div>
@@ -14712,15 +14570,48 @@ Chain B : 166
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;1he8&#39;: &lt;Model id=0&gt;,
+ &#39;1HE8_AB_c&#39;: &lt;Model id=0&gt;,
+ &#39;1e8y&#39;: &lt;Model id=0&gt;,
+ &#39;121p&#39;: &lt;Model id=0&gt;}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Cr&#233;er-les-structures-&quot;freesasa&quot;">Cr&#233;er les structures "freesasa"<a class="anchor-link" href="#Cr&#233;er-les-structures-&quot;freesasa&quot;">&#182;</a></h2>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># via freesasa </span>
-<span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">prot_resid_areas</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;chain </span><span class="si">{</span><span class="n">chain</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">residue</span> <span class="ow">in</span> <span class="n">prot_resid_areas</span><span class="p">[</span><span class="n">chain</span><span class="p">])</span><span class="si">}</span><span class="s2"> residues&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">structures</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({</span> 
+    <span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.pdb&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">):</span> <span class="n">freesasa</span><span class="o">.</span><span class="n">Structure</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">abs</span><span class="p">)</span> 
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">location</span> <span class="ow">in</span> <span class="n">pdb_files</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> 
+<span class="p">})</span>
+<span class="n">structures</span>
 </pre></div>
 
      </div>
@@ -14736,14 +14627,18 @@ Chain B : 166
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>chain A : 749 residues
-chain B : 166 residues
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;1he8&#39;: &lt;freesasa.Structure at 0x7efe43734870&gt;,
+ &#39;1HE8_AB_c&#39;: &lt;freesasa.Structure at 0x7efe43734120&gt;,
+ &#39;1e8y&#39;: &lt;freesasa.Structure at 0x7efe437349f0&gt;,
+ &#39;121p&#39;: &lt;freesasa.Structure at 0x7efe437349c0&gt;}</pre>
 </div>
+
 </div>
 
 </div>
@@ -14753,150 +14648,7 @@ chain B : 166 residues
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>La structure PDB <code>1HE8_AB_c</code> contient deux chaînes, A et B. La chaîne A contient 766 résidus, c'est-à-dire plus de quatre fois plus que la chaîne B. Ceci nous mène à dire qu'il s'agit d'un hétéro-dimère. Ceci est en accord avec les informations trouvées sur la fiche <code>RCSB PDB</code>.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="T&#226;che-3.2">T&#226;che 3.2<a class="anchor-link" href="#T&#226;che-3.2">&#182;</a></h3><p>Allez voir les fiches Uniprot correspondantes aux deux monomères en utilisant les liens dans la fiche du
-PDB</p>
-<p>Pour chaque protéine dans le complexe, répondez aux questions suivantes :</p>
-<ol>
-<li>La structure PDB représente-t-elle la protéine entière ou une portion ?</li>
-<li>La protéine est composée de plusieurs domaines ?</li>
-<li>Quelle est la fonction (putative) de la protéine ? et de ses domaines ?</li>
-</ol>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Cha&#238;ne-A-:-UniProtKB---P48736-(PK3CG_HUMAN)">Cha&#238;ne A : UniProtKB - <a href="https://www.uniprot.org/uniprot/P48736">P48736 (PK3CG_HUMAN)</a><a class="anchor-link" href="#Cha&#238;ne-A-:-UniProtKB---P48736-(PK3CG_HUMAN)">&#182;</a></h4><ol>
-<li>La structure PDB ne représente qu'une portion de cette protéine, vu que les longueurs de séquence ne coincident pas : </li>
-</ol>
-$$
-    len(1HE8_{A}) = 965 \;\;\;\; len(P48736) = 1102
-$$<p>On trouve aussi une description plus detaillée dans la section <strong>Structure</strong>, l'entrée PDB <em>1HE8</em> correspond aux positions $144-1102$</p>
-<ol>
-<li>La protéine est composée de plusieurs domaines ?</li>
-</ol>
-<p>Oui, ce sont <a href="https://www.uniprot.org/uniprot/P48736#family_and_domains">les suivants</a> :</p>
-<table>
-<thead><tr>
-<th>Feature key</th>
-<th>Position(s)</th>
-<th>Description</th>
-<th>Putative Function</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Domain</td>
-<td>34 – 141</td>
-<td>PI3K-ABD</td>
-<td>The adaptor-binding domain (ABD) binds to p85, the regulatory subunit.</td>
-</tr>
-<tr>
-<td>Domain</td>
-<td>217 – 309</td>
-<td>PI3K-RBD</td>
-<td>PI3K RBD is a Ras-binding domain.</td>
-</tr>
-<tr>
-<td>Domain</td>
-<td>357 – 521</td>
-<td>C2 PI3K-type</td>
-<td>The putative membrane-binding PI3K-type C2 domain is an eight- stranded antiparallel beta-sandwich consisting of two four-stranded beta- sheets.</td>
-</tr>
-<tr>
-<td>Domain</td>
-<td>541 – 723</td>
-<td>PIK helical</td>
-<td>The phosphoinositide kinase (PIK) domain is a region conserved among all PI3 and PI4-kinases and although its role is presently unclear, it is likely to be involved in substrate presentation</td>
-</tr>
-<tr>
-<td>Domain</td>
-<td>828 – 1073</td>
-<td>PI3K/PI4K</td>
-<td>Phosphorylates phosphoinositides on the 3-hydroxyl group of the inositol ring.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Quelle est la fonction (putative) de la protéine ? et de ses domaines ?</li>
-</ol>
-<p>Les fonctions sont détailles dans <a href="https://www.uniprot.org/uniprot/P48736#function">cette section</a>.
-Elle possède plusieurs fonctions putatives :</p>
-
-<pre><code>* Phosphorilation ( PtdIns(4,5)P2 ==&gt; PIP3 )
-* Activation de cascades de signalisation liées à la croissance/developement cellulaires, survie, proliferation, motilité et morphologie.
-* Nécessaire pour le developement et la signalisation de lymphocyte B
-
-</code></pre>
-<p>Pour les fonctions de chacun des domaines, voir le tableau précédent.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Cha&#238;ne-B-:-UniProtKB---P01112-(RASH_HUMAN)">Cha&#238;ne B : UniProtKB - <a href="https://www.uniprot.org/uniprot/P01112">P01112 (RASH_HUMAN)</a><a class="anchor-link" href="#Cha&#238;ne-B-:-UniProtKB---P01112-(RASH_HUMAN)">&#182;</a></h4><ol>
-<li>La structure PDB représente-t-elle la protéine entière ou une portion ?</li>
-</ol>
-$$
-    len(1HE8_{B}) = 166 \;\;\;\; len(P01112) = 189 (isoforme \; A) \; ;\;  170  (isoforme \; B)
-$$<p>La structure PDB contient 166 résidus, ce qui représente une portion peu importe l'isoforme.</p>
-<ol>
-<li>La protéine est composée de plusieurs domaines ?</li>
-</ol>
-<table>
-<thead><tr>
-<th>Feature key</th>
-<th>Position(s)</th>
-<th>Description</th>
-<th>Putative Function</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Region</td>
-<td>166–185</td>
-<td>Hypervariable region</td>
-<td>NA</td>
-</tr>
-<tr>
-<td>Motifi</td>
-<td>32–40</td>
-<td>Effector region</td>
-<td>NA</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Quelle est la fonction (putative) de la protéine ? et de ses domaines ?</li>
-</ol>
-<p>Involved in the activation of Ras protein signal transduction (PubMed:22821884). Ras proteins bind GDP/GTP and possess intrinsic GTPase activity (PubMed:12740440, PubMed:14500341, PubMed:9020151).</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="T&#226;che-3.3">T&#226;che 3.3<a class="anchor-link" href="#T&#226;che-3.3">&#182;</a></h3><p>Ouvrir le fichier PDB fourni dans PyMOL et répondez aux questions suivantes :</p>
-<ol>
-<li><p>Montrer le cartoon</p>
-</li>
-<li><p>Combien de chaînes y a-t-il dans la structure ?</p>
-</li>
-<li><p>Quelle est la topologie des différentes chaînes ?</p>
-<p>Des brins et feuillets β, avec des hélices α.</p>
-</li>
-<li><p>Identifier visuellement l’interface de contact entre les deux protéines : quelles structures secondaires participent à l’interface ?</p>
-<p>Des brins β.</p>
-</li>
-<li><p>Sauvegardez à fichier la session PyMOL (Menu &lt;File→Save Session As&gt;).</p>
-</li>
-</ol>
-
+<h2 id="Calculer-les-aires">Calculer les aires<a class="anchor-link" href="#Calculer-les-aires">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14904,8 +14656,11 @@ $$<p>La structure PDB contient 166 résidus, ce qui représente une portion peu 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># via BioPython</span>
-<span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">prot_biopy</span><span class="o">.</span><span class="n">get_chains</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sasas</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">freesasa</span><span class="o">.</span><span class="n">calc</span><span class="p">(</span><span class="n">struct</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">struct</span> <span class="ow">in</span> <span class="n">structures</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">})</span>
+<span class="n">sasas</span>
 </pre></div>
 
      </div>
@@ -14927,7 +14682,10 @@ $$<p>La structure PDB contient 166 résidus, ce qui représente une portion peu 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
+<pre>{&#39;1he8&#39;: &lt;freesasa.Result at 0x7efe424fd570&gt;,
+ &#39;1HE8_AB_c&#39;: &lt;freesasa.Result at 0x7efe424fd790&gt;,
+ &#39;1e8y&#39;: &lt;freesasa.Result at 0x7efe424fd610&gt;,
+ &#39;121p&#39;: &lt;freesasa.Result at 0x7efe424fd710&gt;}</pre>
 </div>
 
 </div>
@@ -14936,13 +14694,16 @@ $$<p>La structure PDB contient 166 résidus, ce qui représente une portion peu 
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">view_full</span> <span class="o">:=</span> <span class="n">nv</span><span class="o">.</span><span class="n">show_biopython</span><span class="p">(</span><span class="n">prot_biopy</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">resid_areas</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">sasa</span><span class="o">.</span><span class="n">residueAreas</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">sasa</span> <span class="ow">in</span> <span class="n">sasas</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">})</span>
 </pre></div>
 
      </div>
@@ -14950,80 +14711,19 @@ $$<p>La structure PDB contient 166 résidus, ce qui représente une portion peu 
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="dc7f3b01-cee5-41ef-a1b8-9d8b6247f731" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('dc7f3b01-cee5-41ef-a1b8-9d8b6247f731');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e1b82c2277f140e58ee16ff31ae10895", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">view_A</span> <span class="o">:=</span> <span class="n">nv</span><span class="o">.</span><span class="n">show_biopython</span><span class="p">(</span><span class="n">prot_biopy</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;A&quot;</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">monomere1</span> <span class="o">=</span> <span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;121p&quot;</span><span class="p">]</span>
+<span class="n">monomere2</span> <span class="o">=</span> <span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1e8y&quot;</span><span class="p">]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="a26f8093-03f9-4cd7-8770-5d97b94ab137" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('a26f8093-03f9-4cd7-8770-5d97b94ab137');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "136da90c58854019b18060edaebe844f", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15032,7 +14732,241 @@ var element = document.getElementById('a26f8093-03f9-4cd7-8770-5d97b94ab137');
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">view_B</span> <span class="o">:=</span> <span class="n">nv</span><span class="o">.</span><span class="n">show_biopython</span><span class="p">(</span><span class="n">prot_biopy</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;B&quot;</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">monomere1</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">monomere2</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(dict_keys([&#39;A&#39;]), dict_keys([&#39;A&#39;]))</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">monomere1</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">value</span><span class="o">.</span><span class="n">relativeTotal</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">relative_sasas</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">odict</span><span class="p">({</span>
+        <span class="n">chain_name</span><span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">residu</span><span class="o">.</span><span class="n">relativeTotal</span> <span class="k">for</span> <span class="n">residu</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">chain_name</span><span class="p">,</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">entry</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="p">})</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">resid_areas</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">})</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">entry</span><span class="p">,</span> <span class="n">chains</span> <span class="ow">in</span> <span class="n">relative_sasas</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">chains</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">chains</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">odict</span><span class="p">({</span>
+            <span class="s2">&quot;total&quot;</span><span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">chain</span> <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">chains</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="p">}))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_sasas</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">odict</span><span class="p">({</span>
+        <span class="n">chain_name</span><span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">residu</span><span class="o">.</span><span class="n">total</span> <span class="k">for</span> <span class="n">residu</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">chain_name</span><span class="p">,</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">entry</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="p">})</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">resid_areas</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">})</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">entry</span><span class="p">,</span> <span class="n">chains</span> <span class="ow">in</span> <span class="n">total_sasas</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">chains</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">chains</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">odict</span><span class="p">({</span>
+            <span class="s2">&quot;total&quot;</span><span class="p">:</span> <span class="nb">sum</span><span class="p">(</span><span class="n">chain</span> <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">chains</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="p">}))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_sasas</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;1he8&#39;: {&#39;A&#39;: 32729.062149104324,
+  &#39;B&#39;: 7427.585501586975,
+  &#39;total&#39;: 40156.6476506913},
+ &#39;1HE8_AB_c&#39;: {&#39;A&#39;: 32729.062149104324,
+  &#39;B&#39;: 7427.585501586975,
+  &#39;total&#39;: 40156.6476506913},
+ &#39;1e8y&#39;: {&#39;A&#39;: 36797.43189172239},
+ &#39;121p&#39;: {&#39;A&#39;: 8720.956397446842}}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">relative_sasas</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;1he8&#39;: {&#39;A&#39;: 201.56061472864042,
+  &#39;B&#39;: 45.29767600588998,
+  &#39;total&#39;: 246.85829073453039},
+ &#39;1HE8_AB_c&#39;: {&#39;A&#39;: 201.56061472864042,
+  &#39;B&#39;: 45.29767600588998,
+  &#39;total&#39;: 246.85829073453039},
+ &#39;1e8y&#39;: {&#39;A&#39;: 227.03229561572496},
+ &#39;121p&#39;: {&#39;A&#39;: 53.29124167145358}}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">views</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">nv</span><span class="o">.</span><span class="n">show_biopython</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">biop_models</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">})</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">views</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15056,13 +14990,422 @@ var element = document.getElementById('a26f8093-03f9-4cd7-8770-5d97b94ab137');
 
 
 
-<div id="b8e9351a-827e-4bd4-93b5-672b53e81ab9" class="jupyter-widgets jp-OutputArea-output ">
+<div id="7de14e3a-08b2-4908-af45-a4046aa80815" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('b8e9351a-827e-4bd4-93b5-672b53e81ab9');
+var element = document.getElementById('7de14e3a-08b2-4908-af45-a4046aa80815');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "dcee78298ffb472c814f9d3ccc798d42", "version_major": 2, "version_minor": 0}
+{"model_id": "6416b47304e94268979ffce5614fa610", "version_major": 2, "version_minor": 0}
 </script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Surface </span>
+<span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">][</span><span class="s2">&quot;A&quot;</span><span class="p">][</span><span class="s2">&quot;459&quot;</span><span class="p">]</span>
+<span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">][</span><span class="s2">&quot;B&quot;</span><span class="p">][</span><span class="s2">&quot;47&quot;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;freesasa.ResidueArea at 0x7efe423f9400&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Interface </span>
+<span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">][</span><span class="s2">&quot;A&quot;</span><span class="p">][</span><span class="s2">&quot;231&quot;</span><span class="p">]</span>
+<span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">][</span><span class="s2">&quot;B&quot;</span><span class="p">][</span><span class="s2">&quot;39&quot;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;freesasa.ResidueArea at 0x7efe423f9280&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">][</span><span class="s2">&quot;B&quot;</span><span class="p">][</span><span class="s2">&quot;39&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">relativeTotal</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0.32488532749843224</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">resid_areas</span><span class="p">[</span><span class="s2">&quot;1HE8_AB_c&quot;</span><span class="p">][</span><span class="s2">&quot;B&quot;</span><span class="p">][</span><span class="s2">&quot;39&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">total</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>38.44692965616447</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span> <span class="n">name</span><span class="p">:</span> <span class="n">entry</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">resid_areas</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;1he8&#39;: dict_keys([&#39;A&#39;, &#39;B&#39;]),
+ &#39;1HE8_AB_c&#39;: dict_keys([&#39;A&#39;, &#39;B&#39;]),
+ &#39;1e8y&#39;: dict_keys([&#39;A&#39;]),
+ &#39;121p&#39;: dict_keys([&#39;A&#39;])}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">residu</span><span class="o">.</span><span class="n">relativeTotal</span> <span class="k">for</span> <span class="n">residu</span> <span class="ow">in</span> <span class="n">monomere1</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>53.29124167145358</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">sasa</span><span class="o">.</span><span class="n">total</span> <span class="k">for</span> <span class="n">sasa</span> <span class="ow">in</span> <span class="n">monomere1</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>8720.956397446842</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span>
+  <span class="n">i</span><span class="p">:</span> <span class="p">{</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">):</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="s2">&quot;abcd&quot;</span><span class="p">)</span>
+<span class="p">}</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;a&#39;: {&#39;0&#39;: 0, &#39;1&#39;: 1, &#39;2&#39;: 4, &#39;3&#39;: 9, &#39;4&#39;: 16, &#39;5&#39;: 25, &#39;6&#39;: 36, &#39;7&#39;: 49},
+ &#39;b&#39;: {&#39;0&#39;: 0, &#39;1&#39;: 1, &#39;2&#39;: 4, &#39;3&#39;: 9, &#39;4&#39;: 16, &#39;5&#39;: 25, &#39;6&#39;: 36, &#39;7&#39;: 49},
+ &#39;c&#39;: {&#39;0&#39;: 0, &#39;1&#39;: 1, &#39;2&#39;: 4, &#39;3&#39;: 9, &#39;4&#39;: 16, &#39;5&#39;: 25, &#39;6&#39;: 36, &#39;7&#39;: 49},
+ &#39;d&#39;: {&#39;0&#39;: 0, &#39;1&#39;: 1, &#39;2&#39;: 4, &#39;3&#39;: 9, &#39;4&#39;: 16, &#39;5&#39;: 25, &#39;6&#39;: 36, &#39;7&#39;: 49}}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complexe</span> <span class="o">=</span> <span class="n">sasas</span><span class="p">[</span><span class="s1">&#39;1HE8_AB_c&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">residueAreas</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complexe</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>dict_keys([&#39;A&#39;, &#39;B&#39;])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">udir</span><span class="p">(</span><span class="n">monomere1</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">][</span><span class="s2">&quot;1&quot;</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;apolar&#39;,
+ &#39;hasRelativeAreas&#39;,
+ &#39;mainChain&#39;,
+ &#39;polar&#39;,
+ &#39;relativeApolar&#39;,
+ &#39;relativeMainChain&#39;,
+ &#39;relativePolar&#39;,
+ &#39;relativeSideChain&#39;,
+ &#39;relativeTotal&#39;,
+ &#39;residueNumber&#39;,
+ &#39;residueType&#39;,
+ &#39;sideChain&#39;,
+ &#39;total&#39;]</pre>
 </div>
 
 </div>
